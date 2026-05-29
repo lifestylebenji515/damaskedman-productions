@@ -1,0 +1,40 @@
+title: DAMASKEDMAN
+description: Music production • mixing • mastering
+url: [your-username.github.io](https://your-username.github.io)
+baseurl: ""
+theme: minima
+
+# Build
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+# Navigation (matches the pages you create)
+nav:
+  - title: Home
+    url: /
+  - title: Services
+    url: /services/
+  - title: Portfolio
+    url: /portfolio/
+  - title: BTS
+    url: /bts/
+  - title: Book
+    url: /book/
+  - title: Pay
+    url: /pay/
+  - title: Clients
+    url: /clients/
+  - title: Contact
+    url: /contact/
+
+social:
+  instagram: yourhandle
+  youtube: yourchannel
+  tiktok: yourhandle
+  soundcloud: yourhandle
+  spotify: yourartistid
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
