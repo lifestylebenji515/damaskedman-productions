@@ -11,12 +11,14 @@ body {
   min-height: 100vh;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 3px solid #b30000;
   flex-wrap: wrap;
 }
 
@@ -25,6 +27,7 @@ header {
   max-width: 100%;
 }
 
+/* Navigation */
 nav {
   display: flex;
   gap: 20px;
@@ -32,16 +35,18 @@ nav {
 }
 
 nav a {
-  color: #d4af37;
+  color: #ff1a1a;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
   color: white;
+  text-shadow: 0 0 10px #ff1a1a;
 }
 
+/* Hero */
 .hero {
   height: 75vh;
   display: flex;
@@ -50,33 +55,45 @@ nav a:hover {
 }
 
 .overlay {
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.75);
   padding: 40px;
   border-radius: 15px;
   text-align: center;
   width: 90%;
   max-width: 800px;
+  border: 2px solid #b30000;
+  box-shadow: 0 0 25px rgba(179,0,0,0.5);
 }
 
 .overlay h1 {
   font-size: 2.8rem;
   margin-bottom: 15px;
+  color: #ff1a1a;
 }
 
 .overlay p {
   font-size: 1.2rem;
   margin-bottom: 25px;
+  color: #ddd;
 }
 
+/* Buttons */
 .btn {
-  background: #d4af37;
-  color: black;
+  background: #b30000;
+  color: white;
   padding: 14px 28px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s ease;
 }
 
+.btn:hover {
+  background: #ff1a1a;
+  box-shadow: 0 0 20px #ff1a1a;
+}
+
+/* Cards */
 .services {
   display: flex;
   justify-content: center;
@@ -86,22 +103,29 @@ nav a:hover {
 }
 
 .card {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.85);
   padding: 30px;
   border-radius: 12px;
   width: 300px;
   text-align: center;
-  border: 2px solid #d4af37;
+  border: 2px solid #b30000;
+  box-shadow: 0 0 15px rgba(179,0,0,0.35);
 }
 
+.card h2 {
+  color: #ff1a1a;
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 25px;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.9);
+  border-top: 3px solid #b30000;
 }
 
 /* Mobile */
-
 @media (max-width: 768px) {
   header {
     flex-direction: column;
