@@ -1,2 +1,2 @@
 # damaskedman-productions
-Offer premium stuido services 
+Offer premium studio services 
