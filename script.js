@@ -1,6 +1,9 @@
-window.onload = function () {
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("main-content");
+
   setTimeout(() => {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("main-content").classList.remove("hidden");
-  }, 2500);
-};
+    loader.style.display = "none";
+    content.classList.remove("hidden");
+  }, 2000);
+});
